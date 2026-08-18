@@ -86,6 +86,13 @@ button, input, textarea, select { font: inherit; }
 }
 h1, h2, h3 { margin: 0; line-height: 1.17; }
 h1 { margin-top: 16px; font-size: clamp(2.15rem, 3.8vw, 3.45rem); letter-spacing: -.02em; }
+.hero-title {
+  max-width: 660px;
+  font-size: clamp(1.9rem, 3.1vw, 2.85rem);
+  line-height: 1.22;
+  font-weight: 720;
+  letter-spacing: 0;
+}
 h2 { font-size: clamp(1.75rem, 2.8vw, 2.55rem); letter-spacing: -.015em; }
 h3 { font-size: 1.05rem; }
 .hero-lead { margin: 20px 0 0; max-width: 620px; color: var(--muted); font-size: 1.03rem; }
@@ -266,7 +273,7 @@ h3 { font-size: 1.05rem; }
   .nav-wrap { height: 68px; }
   .brand-mark { width: 70px; height: 56px; }
   .hero { padding: 34px 0 50px; }
-  h1 { font-size: 2.05rem; }
+  .hero-title { font-size: 1.85rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .section { padding: 58px 0; }
   .feature-grid, .research-pipeline, .privacy-cards, .steps, .contact-form { grid-template-columns: 1fr; }
