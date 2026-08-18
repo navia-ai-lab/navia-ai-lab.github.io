@@ -47,8 +47,8 @@ button, input, textarea, select { font: inherit; }
 .nav-wrap { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; }
 .brand-mark {
-  width: 66px;
-  height: 56px;
+  width: 82px;
+  height: 68px;
   flex: 0 0 auto;
   object-fit: contain;
 }
@@ -238,7 +238,7 @@ details p { color: var(--muted); margin-top: 0; padding-bottom: 18px; }
 @media (max-width: 560px) {
   .brand-copy small { display: none; }
   .nav-wrap { height: 68px; }
-  .brand-mark { width: 58px; height: 48px; }
+  .brand-mark { width: 70px; height: 56px; }
   .hero { padding: 36px 0 54px; }
   h1 { font-size: 2.5rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
