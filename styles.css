@@ -278,6 +278,39 @@ h3 { font-size: 1.06rem; }
 .about-card h2 { margin-top: 14px; font-size: clamp(1.65rem, 2.6vw, 2.35rem); }
 .about-card p { margin: 0; color: var(--muted); font-size: 1rem; }
 
+.funding-card {
+  display: grid;
+  grid-template-columns: .82fr 1.18fr;
+  gap: 42px;
+  align-items: center;
+  padding: 34px 36px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+.funding-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border: 1px solid #edf3f8;
+  border-radius: 8px;
+  background: #fff;
+}
+.funding-logo {
+  width: min(100%, 340px);
+  height: auto;
+  object-fit: contain;
+}
+.funding-card h2 {
+  margin-top: 13px;
+  font-size: clamp(1.65rem, 2.5vw, 2.3rem);
+}
+.funding-card p {
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
 .cta-section { padding: 0 0 78px; }
 .cta-card {
   display: grid;
@@ -388,12 +421,14 @@ h3 { font-size: 1.06rem; }
   .hero-grid,
   .research-simple,
   .about-card,
+  .funding-card,
   .cta-card,
   .footer-grid { grid-template-columns: 1fr; }
   .core-grid { grid-template-columns: 1fr; }
   .hero-copy { order: 1; }
   .hero-visual { order: 2; }
   .about-card { gap: 18px; }
+  .funding-card { gap: 22px; }
   .footer-bottom { flex-direction: column; }
   .footer-bottom p:last-child { text-align: left; }
 }
@@ -411,5 +446,6 @@ h3 { font-size: 1.06rem; }
   .contact-form { grid-template-columns: 1fr; }
   .contact-form .full { grid-column: auto; }
   .cta-card,
+  .funding-card,
   .about-card { padding: 26px 20px; }
 }
