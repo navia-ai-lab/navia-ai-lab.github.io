@@ -202,15 +202,6 @@ h3 { font-size: 1.05rem; }
 .mini-card { padding: 22px; border: 1px solid var(--line); background: white; border-radius: 8px; }
 .mini-card p { color: var(--muted); font-size: .92rem; margin-bottom: 0; }
 
-.faq-wrap { max-width: 920px; }
-.faq { display: grid; gap: 12px; }
-details { border: 1px solid var(--line); border-radius: 8px; background: white; padding: 0 20px; }
-summary { cursor: pointer; list-style: none; padding: 18px 34px 18px 0; font-weight: 750; position: relative; }
-summary::-webkit-details-marker { display: none; }
-summary::after { content: "+"; position: absolute; right: 3px; top: 13px; font-size: 1.6rem; color: var(--blue-2); }
-details[open] summary::after { content: "–"; }
-details p { color: var(--muted); margin-top: 0; padding-bottom: 18px; }
-
 .cta-section { padding: 0 0 92px; }
 .cta-card {
   display: grid; grid-template-columns: .88fr 1.12fr; gap: 50px;
