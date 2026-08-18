@@ -15,6 +15,7 @@ ASD screening is presented as a **research baseline for progress tracking**, not
 ## Files
 
 - `index.html` — complete single-page site
+- `publications.html` — research publications and resources page
 - `styles.css` — responsive styling
 - `script.js` — mobile navigation, reveal effects, active navigation, and contact-form helper
 - `assets/navia-logo.png` — NAVIA logo
