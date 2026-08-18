@@ -1,37 +1,32 @@
-# NAVIA Website Prototype
+# NAVIA Website
 
-A responsive, dependency-free single-page website for:
+Public website for **NAVIA — Neurodiversity Assessment and Voice-enabled Intervention AI**.
 
-**NAVIA — Neurodiversity Assessment and Voice-enabled Intervention AI**
+## Positioning
 
-## Included
-- Responsive landing page
-- Mobile navigation
-- Therapist-focused progress tracking section
-- Speech & language / social communication features
-- Social story and script-generation descriptions
-- Parent collaboration workflow
-- Responsible-AI / privacy section
-- FAQ
-- Contact / early-access form UI
-- Accessible semantic HTML
-- No external libraries, fonts, or images required
+The homepage is intentionally simple and organized around three practical ideas:
 
-## Run locally
-Open `index.html` directly in a browser, or serve the folder:
+1. **Track ASD Progress** — screening-informed speech, voice, language, interaction, and behavioral patterns over time.
+2. **Create Personalized Support** — therapist-guided social stories, visual stories, scripts, and communication activities.
+3. **Practice & Adapt** — family-supported practice with progress feeding back into the next therapy cycle.
 
-```bash
-python3 -m http.server 8000
-```
+ASD screening is presented as a **research baseline for progress tracking**, not as an automated diagnosis or replacement for clinical judgment.
 
-Then open `http://localhost:8000`.
+## Files
 
-## Before production
-Replace:
-- `hello@navia.example`
-- prototype contact-form behavior in `script.js`
-- privacy copy with your approved institutional/privacy policy
-- any product claims with claims supported by your validation studies
-- "Not a medical device" language based on your intended regulatory pathway
+- `index.html` — complete single-page site
+- `styles.css` — responsive styling
+- `script.js` — mobile navigation, reveal effects, active navigation, and contact-form helper
+- `assets/navia-logo.png` — NAVIA logo
+- `.nojekyll` — GitHub Pages support
+- `robots.txt` — crawler rules
 
-The current copy intentionally positions NAVIA as clinician-support software rather than an automated diagnostic system.
+## GitHub Pages
+
+This package can be copied directly into the root of the `navia-ai-lab.github.io` repository.
+
+## Before production use
+
+- Connect the collaboration form to an approved email address, backend, or form service.
+- Review public claims with the research/clinical team as the prototype evolves.
+- Add approved institutional acknowledgements, team members, privacy information, and publications when ready.
