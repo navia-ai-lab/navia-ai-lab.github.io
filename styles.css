@@ -59,7 +59,13 @@ button, input, textarea, select { font: inherit; }
 .brand-mark { width: 76px; height: 62px; object-fit: contain; flex: 0 0 auto; }
 .brand-copy { display: flex; flex-direction: column; line-height: 1.08; }
 .brand-copy strong { font-size: 1.42rem; letter-spacing: .12em; font-weight: 700; }
-.brand-copy small { margin-top: 5px; color: var(--muted); font-size: .71rem; }
+.brand-copy small {
+  margin-top: 5px;
+  max-width: 285px;
+  color: var(--muted);
+  font-size: .71rem;
+  line-height: 1.25;
+}
 
 .main-nav { display: flex; align-items: center; gap: 24px; }
 .main-nav a { color: #425168; font-size: .94rem; font-weight: 650; }
