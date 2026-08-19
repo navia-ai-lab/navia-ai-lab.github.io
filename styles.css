@@ -291,18 +291,30 @@ h3 { font-size: 1.06rem; }
   font-weight: 800;
 }
 
-.responsible-grid {
+.responsible-block {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-}
-.mini-card {
-  padding: 22px;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 34px;
+  align-items: center;
+  padding: 24px 28px;
   border: 1px solid var(--line);
-  background: white;
   border-radius: 8px;
+  background: white;
 }
-.mini-card p { color: var(--muted); font-size: .91rem; margin: 8px 0 0; }
+.responsible-block h2 {
+  margin-top: 12px;
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+}
+.responsible-copy strong {
+  display: block;
+  color: var(--ink);
+  font-size: .95rem;
+}
+.responsible-copy p {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: .95rem;
+}
 
 .funding-section { padding: 42px 0; }
 .funding-card {
@@ -508,7 +520,6 @@ h3 { font-size: 1.06rem; }
   .hero-grid { gap: 38px; }
   .workflow-grid { grid-template-columns: 1fr 1fr; }
   .workflow-arrow { display: none; }
-  .responsible-grid { grid-template-columns: repeat(2, 1fr); }
   .resource-grid { grid-template-columns: 1fr 1fr; }
 }
 
@@ -536,6 +547,7 @@ h3 { font-size: 1.06rem; }
   .hero { padding-top: 40px; }
   .hero-grid,
   .research-simple,
+  .responsible-block,
   .funding-card,
   .cta-card,
   .footer-grid { grid-template-columns: 1fr; }
@@ -565,10 +577,10 @@ h3 { font-size: 1.06rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .section { padding: 58px 0; }
   .workflow-grid,
-  .responsible-grid,
   .resource-grid,
   .contact-form { grid-template-columns: 1fr; }
   .contact-form .full { grid-column: auto; }
   .cta-card,
-  .funding-card { padding: 26px 20px; }
+  .funding-card,
+  .responsible-block { padding: 26px 20px; }
 }
