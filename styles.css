@@ -269,17 +269,25 @@ h3 { font-size: 1.06rem; }
   font-weight: 700;
 }
 
-.research-simple {
-  max-width: 820px;
-  text-align: center;
+.research-card {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 34px;
+  align-items: center;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
 }
-.research-copy p { margin: 16px auto 0; color: var(--muted); }
+.research-copy p { margin: 14px 0 0; color: var(--muted); }
 .research-tags {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 8px 14px;
-  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #dce8f2;
+  border-radius: 8px;
+  background: #fbfdff;
   color: #52647b;
   font-size: .86rem;
   font-weight: 700;
@@ -520,7 +528,7 @@ h3 { font-size: 1.06rem; }
 
   .hero { padding-top: 40px; }
   .hero-grid,
-  .research-simple,
+  .research-card,
   .responsible-block,
   .cta-card { grid-template-columns: 1fr; }
   .core-grid { grid-template-columns: 1fr; }
