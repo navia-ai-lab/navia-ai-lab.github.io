@@ -355,16 +355,65 @@ h3 { font-size: 1.06rem; }
 
 .about-card {
   display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 54px;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 42px;
   align-items: center;
   padding: 34px 36px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: linear-gradient(135deg, #fbfdff 0%, #f7fcfa 100%);
+  background: linear-gradient(135deg, #fbfdff 0%, #f8fcfb 100%);
 }
 .about-card h2 { margin-top: 14px; font-size: clamp(1.65rem, 2.6vw, 2.35rem); }
-.about-card p { margin: 0; color: var(--muted); font-size: 1rem; }
+.about-card p { color: var(--muted); font-size: 1rem; }
+.about-copy p { margin: 16px 0 0; }
+.about-panel {
+  padding: 22px;
+  border: 1px solid #dce9f4;
+  border-radius: 8px;
+  background: rgba(255,255,255,.82);
+  box-shadow: 0 16px 34px rgba(45,72,96,.06);
+}
+.about-panel-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.about-panel-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #eef4ff;
+  color: var(--blue-2);
+  font-size: .86rem;
+  font-weight: 800;
+}
+.about-list {
+  display: grid;
+  gap: 11px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.about-list li {
+  position: relative;
+  padding-left: 24px;
+  color: #53657a;
+  font-size: .94rem;
+}
+.about-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .45em;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 0 4px rgba(68,191,175,.13);
+}
 
 .funding-section { padding: 42px 0; }
 .funding-card {
