@@ -211,17 +211,95 @@ h3 { font-size: 1.06rem; }
   font-size: .82rem;
 }
 
-.workflow-grid {
+.workflow-map {
+  position: relative;
+  min-height: 430px;
   display: grid;
-  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
-  gap: 14px;
-  align-items: stretch;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 76px 190px;
+  padding: 42px;
+  border: 1px solid #dce8f2;
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at center, rgba(78, 131, 230, .12) 0 120px, transparent 121px),
+    linear-gradient(135deg, #ffffff 0%, #f5fbfa 100%);
+  overflow: hidden;
 }
-.workflow-step {
-  padding: 22px 20px;
+.workflow-map::before {
+  content: "";
+  position: absolute;
+  inset: 76px 150px;
+  border: 2px dashed #bad9e4;
+  border-radius: 999px;
+}
+.workflow-card {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 13px;
+  align-items: center;
+  padding: 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
+  background: rgba(255,255,255,.94);
+  box-shadow: 0 16px 34px rgba(45,72,96,.08);
+}
+.workflow-card.observe,
+.workflow-card.support { justify-self: end; }
+.workflow-card.analyze,
+.workflow-card.track { justify-self: start; }
+.workflow-card h3 {
+  align-self: end;
+  margin: 0;
+}
+.workflow-card p {
+  grid-column: 1 / -1;
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+.workflow-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: var(--blue-2);
+  background: #eef4ff;
+}
+.workflow-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.workflow-center {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  width: 190px;
+  min-height: 118px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 7px;
+  padding: 18px;
+  border: 1px solid #c8e7e3;
+  border-radius: 8px;
   background: white;
+  box-shadow: 0 18px 36px rgba(39,140,128,.13);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.workflow-center strong { color: var(--ink); }
+.workflow-center span {
+  color: var(--muted);
+  font-size: .82rem;
 }
 .step-number {
   width: 30px;
@@ -233,9 +311,6 @@ h3 { font-size: 1.06rem; }
   color: var(--blue-2);
   font-weight: 800;
 }
-.workflow-step h3 { margin-top: 15px; }
-.workflow-step p { margin: 8px 0 0; color: var(--muted); font-size: .91rem; }
-.workflow-arrow { display: grid; place-items: center; color: #7d8ba0; font-size: 1.55rem; }
 .loop-note {
   width: fit-content;
   margin: 20px auto 0;
@@ -456,8 +531,12 @@ h3 { font-size: 1.06rem; }
 @media (max-width: 1050px) {
   .main-nav { gap: 16px; }
   .hero-grid { gap: 38px; }
-  .workflow-grid { grid-template-columns: 1fr 1fr; }
-  .workflow-arrow { display: none; }
+  .workflow-map {
+    gap: 52px 132px;
+    padding: 34px;
+  }
+  .workflow-map::before { inset: 78px 112px; }
+  .workflow-center { width: 170px; }
   .responsible-grid { grid-template-columns: repeat(2, 1fr); }
   .resource-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -504,6 +583,26 @@ h3 { font-size: 1.06rem; }
   .about-card { gap: 18px; }
   .funding-card { gap: 22px; }
   .funding-logo-wrap { width: fit-content; }
+  .workflow-map {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 22px;
+  }
+  .workflow-map::before { display: none; }
+  .workflow-card.observe,
+  .workflow-card.analyze,
+  .workflow-card.support,
+  .workflow-card.track {
+    justify-self: stretch;
+  }
+  .workflow-center {
+    position: static;
+    width: auto;
+    min-height: auto;
+    order: -1;
+    transform: none;
+  }
   .footer-bottom { flex-direction: column; }
   .footer-bottom p:last-child { text-align: left; }
 }
@@ -516,7 +615,6 @@ h3 { font-size: 1.06rem; }
   .hero-title { font-size: 1.85rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .section { padding: 58px 0; }
-  .workflow-grid,
   .responsible-grid,
   .resource-grid,
   .contact-form { grid-template-columns: 1fr; }
