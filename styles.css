@@ -363,8 +363,8 @@ h3 { font-size: 1.06rem; }
   text-align: right;
 }
 .footer-funding-side img {
-  width: 108px;
-  height: auto;
+  width: auto;
+  height: 55px;
   flex: 0 0 auto;
   object-fit: contain;
 }
@@ -558,4 +558,5 @@ h3 { font-size: 1.06rem; }
     justify-content: flex-start;
     text-align: left;
   }
+  .footer-funding-side img { height: 48px; }
 }

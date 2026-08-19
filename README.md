@@ -21,6 +21,7 @@ ASD screening is presented as a **research baseline for progress tracking**, not
 - `assets/navia-logo.png` — NAVIA logo
 - `assets/navia-hero-family.png` — homepage hero image
 - `assets/navia-workflow-diagram.png` — homepage workflow diagram
+- `assets/qcri-logo.png` — QCRI/HBKU footer logo
 - `.nojekyll` — GitHub Pages support
 - `robots.txt` — crawler rules
 
