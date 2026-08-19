@@ -55,7 +55,7 @@ button, input, textarea, select { font: inherit; }
   justify-content: space-between;
   gap: 24px;
 }
-.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand { display: inline-flex; align-items: center; gap: 6px; }
 .brand-mark { width: 92px; height: 74px; object-fit: contain; flex: 0 0 auto; }
 .brand-copy { display: flex; flex-direction: column; line-height: 1.08; }
 .brand-copy strong { font-size: 1.42rem; letter-spacing: .12em; font-weight: 700; }
