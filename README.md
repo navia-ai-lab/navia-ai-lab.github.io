@@ -20,6 +20,7 @@ ASD screening is presented as a **research baseline for progress tracking**, not
 - `script.js` — mobile navigation, reveal effects, active navigation, and contact-form helper
 - `assets/navia-logo.png` — NAVIA logo
 - `assets/navia-hero-family.png` — homepage hero image
+- `assets/navia-workflow-diagram.png` — homepage workflow diagram
 - `.nojekyll` — GitHub Pages support
 - `robots.txt` — crawler rules
 
