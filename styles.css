@@ -500,17 +500,54 @@ h3 { font-size: 1.06rem; }
 }
 .publication-list {
   display: grid;
-  gap: 12px;
+  gap: 16px;
 }
 .publication-item {
-  padding: 18px 20px;
+  padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: white;
 }
+.publication-meta {
+  margin-bottom: 8px;
+  color: var(--blue-2);
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
 .publication-item p {
   margin: 8px 0 0;
   color: var(--muted);
+}
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 15px;
+}
+.publication-actions button {
+  min-height: 36px;
+  padding: 0 13px;
+  border: 1px solid #cfddeb;
+  border-radius: 8px;
+  background: #f5f8fb;
+  color: #7b8999;
+  font: inherit;
+  font-size: .83rem;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+.bibtex {
+  overflow-x: auto;
+  margin: 15px 0 0;
+  padding: 14px;
+  border: 1px solid #e1eaf3;
+  border-radius: 8px;
+  background: #f8fbfd;
+  color: #4f5f73;
+  font-size: .78rem;
+  line-height: 1.55;
 }
 
 .reveal {
