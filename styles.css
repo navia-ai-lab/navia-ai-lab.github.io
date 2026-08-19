@@ -139,6 +139,8 @@ h3 { font-size: 1.06rem; }
 }
 .hero-trust span::before { content: "•"; color: var(--teal); margin-right: 8px; }
 .hero-visual {
+  width: min(100%, 500px);
+  justify-self: end;
   overflow: hidden;
   border: 1px solid #dbe8f5;
   border-radius: 18px;
@@ -148,7 +150,7 @@ h3 { font-size: 1.06rem; }
 .hero-visual img {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 2;
+  height: clamp(285px, 31vw, 370px);
   object-fit: cover;
 }
 
@@ -490,7 +492,15 @@ h3 { font-size: 1.06rem; }
   .footer-grid { grid-template-columns: 1fr; }
   .core-grid { grid-template-columns: 1fr; }
   .hero-copy { order: 1; }
-  .hero-visual { order: 2; }
+  .hero-visual {
+    order: 2;
+    width: 100%;
+    justify-self: stretch;
+  }
+  .hero-visual img {
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
   .about-card { gap: 18px; }
   .funding-card { gap: 22px; }
   .funding-logo-wrap { width: fit-content; }
