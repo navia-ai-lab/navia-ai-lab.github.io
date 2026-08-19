@@ -362,9 +362,17 @@ h3 { font-size: 1.06rem; }
 .footer-brand-line {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 36px;
 }
-.footer-brand .brand-copy small { max-width: 330px; line-height: 1.35; }
+.footer-brand {
+  flex: 0 0 auto;
+  min-width: 420px;
+}
+.footer-brand .brand-copy small {
+  max-width: none;
+  line-height: 1.35;
+  white-space: nowrap;
+}
 .footer-brand-line > img {
   width: 108px;
   height: auto;
@@ -529,6 +537,7 @@ h3 { font-size: 1.06rem; }
   .footer-brand-line {
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 20px;
   }
   .footer-bottom { flex-direction: column; }
   .footer-bottom p:last-child { text-align: left; }
@@ -548,5 +557,10 @@ h3 { font-size: 1.06rem; }
   .contact-form .full { grid-column: auto; }
   .cta-card,
   .responsible-block { padding: 26px 20px; }
+  .footer-brand {
+    min-width: 0;
+    width: 100%;
+  }
+  .footer-brand .brand-copy small { white-space: normal; }
   .footer-brand-line { flex-direction: column; }
 }
