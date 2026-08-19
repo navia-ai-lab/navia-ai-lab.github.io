@@ -233,32 +233,43 @@ h3 { font-size: 1.06rem; }
 
 .research-card {
   display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 34px;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
   align-items: center;
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: white;
 }
+.research-copy h2 {
+  margin-top: 13px;
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+}
 .research-copy p { margin: 14px 0 0; color: var(--muted); }
 .research-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 14px;
-  padding: 16px;
+  display: grid;
+  gap: 10px;
+}
+.research-tags div {
+  padding: 14px 15px;
   border: 1px solid #dce8f2;
   border-radius: 8px;
   background: #fbfdff;
-  color: #52647b;
-  font-size: .86rem;
-  font-weight: 700;
 }
-.research-tags span + span::before {
-  content: "·";
-  margin-right: 14px;
-  color: #94a4b8;
+.research-tags span,
+.research-tags strong {
+  display: block;
+}
+.research-tags span {
+  color: var(--ink);
+  font-size: .93rem;
   font-weight: 800;
+}
+.research-tags strong {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: .82rem;
+  font-weight: 700;
 }
 
 .responsible-block {
