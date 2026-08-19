@@ -216,6 +216,8 @@ h3 { font-size: 1.06rem; }
 }
 
 .workflow-diagram {
+  width: min(100%, 920px);
+  margin: 0 auto;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -518,13 +520,7 @@ h3 { font-size: 1.06rem; }
   .section { padding: 58px 0; }
   .resource-grid,
   .contact-form { grid-template-columns: 1fr; }
-  .workflow-diagram {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .workflow-diagram img {
-    min-width: 760px;
-  }
+  .workflow-diagram { width: 100%; }
   .contact-form .full { grid-column: auto; }
   .cta-card,
   .responsible-block { padding: 26px 20px; }
