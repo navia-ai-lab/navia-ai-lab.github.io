@@ -56,7 +56,7 @@ button, input, textarea, select { font: inherit; }
   gap: 24px;
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; }
-.brand-mark { width: 76px; height: 62px; object-fit: contain; flex: 0 0 auto; }
+.brand-mark { width: 92px; height: 74px; object-fit: contain; flex: 0 0 auto; }
 .brand-copy { display: flex; flex-direction: column; line-height: 1.08; }
 .brand-copy strong { font-size: 1.42rem; letter-spacing: .12em; font-weight: 700; }
 .brand-copy small {
@@ -536,7 +536,7 @@ h3 { font-size: 1.06rem; }
 @media (max-width: 560px) {
   .brand-copy small { display: none; }
   .nav-wrap { min-height: 68px; }
-  .brand-mark { width: 68px; height: 54px; }
+  .brand-mark { width: 78px; height: 62px; }
   .hero { padding: 34px 0 48px; }
   .hero-title { font-size: 1.85rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
